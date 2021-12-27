@@ -267,6 +267,16 @@ function Homepage() {
               >
                 {CONFIG.MARKETPLACE}
               </StyledButton>
+            	<StyledButton
+                onClick={(e) => {
+                  window.open("/rarity", "_self");
+                }}
+                style={{
+                  margin: "5px",
+                }}
+              >
+                Rarity
+              </StyledButton>
             </span>
             <s.SpacerSmall />
             {Number(data.totalSupply) >= CONFIG.MAX_SUPPLY ? (
